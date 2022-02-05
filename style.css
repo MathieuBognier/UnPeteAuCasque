@@ -12,6 +12,7 @@ body
     max-width: 960px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 20px;
 }
 
 .intro
@@ -100,7 +101,17 @@ body
 {
     background-color: aliceblue;
     padding: 30px;
-    margin-bottom: 50px;
     text-align: justify;
 }
 
+footer
+{
+    background-color: rgb(227, 235, 241);
+    padding: 20px;
+}
+
+.form
+{
+    display:flex;
+    flex-direction: column;
+}
