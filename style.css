@@ -56,7 +56,7 @@ body
     list-style-type: none;
     color:aliceblue;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 0;
     padding: 0;
 }
@@ -124,7 +124,6 @@ footer
     display:flex;
     flex-direction: column;
     height: 450px;
-    border-right: 1px solid rgb(146, 150, 151);
     padding-right: 30px;
     justify-content: space-around;
 }
@@ -174,6 +173,7 @@ footer
 #sendMessage
 {
     flex:4;
+    border-right: 1px solid rgb(146, 150, 151);
 }
 
 #aboutMe
@@ -219,7 +219,7 @@ footer
 {
     margin:auto;
     background-color: rgba(205, 215, 223, 0.8);
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 10px 30px 10px 30px; 
 }
 
