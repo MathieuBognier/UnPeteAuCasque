@@ -118,7 +118,7 @@ footer
 {
     display:flex;
     flex-direction: column;
-    height: 500px;
+    height: 450px;
     border-right: 1px solid rgb(146, 150, 151);
     padding-right: 30px;
     justify-content: space-around;
@@ -181,4 +181,16 @@ footer
 {
     float:left;
     margin-right: 20px;
+}
+
+#signature
+{
+    display:flex;
+}
+
+#signatureImage
+{
+    margin-left: auto;
+    margin-top: 10px;
+    color:rgb(103, 106, 107);
 }
