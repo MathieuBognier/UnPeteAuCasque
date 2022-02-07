@@ -155,7 +155,7 @@ footer
     height: 100px;
 }
 
-.field label
+.field label, .button input
 {
     font-size: 0.7rem;
     text-transform: uppercase;
