@@ -53,7 +53,52 @@ body
     margin-right: auto;
 }
 
-.nav
+.tabs input
+{
+    display:none;
+}
+
+.tabs label
+{
+    background-color: rgba(240, 248, 255, 0.233);
+    color:aliceblue;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+.pages section 
+{
+    display:none;
+}
+
+.tabs input.tabSelCollection:checked ~ .pages .pageCollection
+{
+    display:block;
+}
+
+.tabs input.tabSelSimulateur:checked ~ .pages .pageSimulateur
+{
+    display:block;
+}
+
+.tabs input.tabSelLectures:checked ~ .pages .pageLectures
+{
+    display:block;
+}
+
+.tabs input:checked + label
+{
+    background-color: rgb(227, 235, 241);
+    color:rgb(103, 106, 107);
+}
+
+/*.nav
 {
     display:flex;
     flex-wrap: wrap;
@@ -107,9 +152,9 @@ body
 {
     background-color: rgb(227, 235, 241);
     color:rgb(103, 106, 107);
-}
+} */
 
-.page
+.pageCollection, .pageSimulateur, .pageLectures 
 {
     background-color: rgb(227, 235, 241);
     padding: 30px;
