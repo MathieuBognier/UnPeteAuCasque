@@ -177,14 +177,16 @@ footer
 
 #sendMessage
 {
-    flex:4;
+    flex:3;
     border-right: 1px solid rgb(146, 150, 151);
+    padding-top: 20px;
 }
 
 #aboutMe
 {
     flex:2;
     margin: 20px;
+    padding-top: 20px;
 }
 
 #avatar
