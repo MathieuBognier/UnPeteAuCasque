@@ -53,6 +53,12 @@ body
     margin-right: auto;
 }
 
+.tabs
+{
+    background-color: rgba(240, 248, 255, 0.233);
+    padding-top: 4px;
+}
+
 .tabs input
 {
     display:none;
@@ -60,7 +66,6 @@ body
 
 .tabs label
 {
-    background-color: rgba(240, 248, 255, 0.233);
     color:aliceblue;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -69,27 +74,12 @@ body
     padding-bottom: 10px;
     padding-top: 10px;
     line-height: 40px;
-    border-radius: 4px;
+    margin-right: -4px;
 }
 
-.pages section 
+.tabs label:hover
 {
-    display:none;
-}
-
-.tabs input.tabSelCollection:checked ~ .pages .pageCollection
-{
-    display:block;
-}
-
-.tabs input.tabSelSimulateur:checked ~ .pages .pageSimulateur
-{
-    display:block;
-}
-
-.tabs input.tabSelLectures:checked ~ .pages .pageLectures
-{
-    display:block;
+    background-color: rgba(240, 248, 255, 0.4);
 }
 
 .tabs input:checked + label
@@ -98,67 +88,31 @@ body
     color:rgb(103, 106, 107);
 }
 
-/*.nav
+.pages section 
 {
-    display:flex;
-    flex-wrap: wrap;
-    background-color: rgba(240, 248, 255, 0.233);
+    display:none;
+    background-color: rgb(227, 235, 241);
+    padding: 30px;
+    text-align: justify;
 }
 
-.menu
+.tabs input.tabSelCollection:checked ~ .pages .pageCollection,
+.tabs input.tabSelSimulateur:checked ~ .pages .pageSimulateur,
+.tabs input.tabSelLectures:checked ~ .pages .pageLectures
 {
-    display:flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    color:aliceblue;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    margin: 0;
-    padding: 0;
+    display:block;
 }
 
 .links
 {
-    display:flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    align-items: center;
+    display:inline;
+    float:right;
 }
 
-.menu li:hover, .links li:hover
+.linkIcon img
 {
-    background-color: rgba(240, 248, 255, 0.562);
-}
-
-.links li
-{
-    padding-left: 10px;
+    padding-left:10px;
     padding-right: 10px;
-}
-
-.menu li
-{
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-#menuCollection
-{
-    background-color: rgb(227, 235, 241);
-    color:rgb(103, 106, 107);
-} */
-
-.pageCollection, .pageSimulateur, .pageLectures 
-{
-    background-color: rgb(227, 235, 241);
-    padding: 30px;
-    text-align: justify;
 }
 
 footer
