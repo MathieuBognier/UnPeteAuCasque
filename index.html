@@ -7,6 +7,7 @@
     </head>
     <body>
         <div class="wrapper">
+            <div id="pageTop"></div>
             <div class="intro">
                 <h1>Un pète<br/>au casque</h1>
                 <p>Ma passion pour l'aviation au travers de ma collection de casques, de mon simulateur, de mes lectures... </p>
@@ -19,8 +20,18 @@
                 <input type="radio" name="radioTabs" id="tabLectures" class="tabSelLectures"/>
                 <label for="tabLectures" class="labelLectures">Lectures</label>
                 <div class="links">
-                    <a href="https://www.linkedin.com/in/mathieu-bognier-33270a130/" id="linkedInLink" class="linkIcon" target="blank"><img src="Images/linkedInIcon.png"></a>
-                    <a href="#" id="twitterLink" class="linkIcon"><img src="Images/twitterIcon.png"></a>
+                    <div class="link" id="linkedInLink">
+                        <a href="https://www.linkedin.com/in/mathieu-bognier-33270a130/" id="linkedInLink" target="blank">
+                            <img class = "linkIcon" src="Images/linkedInIcon.png">
+                        </a>
+                    </div>
+                    <div class="link" id="forumLink">
+                        <img class = "linkIcon" src="Images/forumIcon.png">
+                        <nav class="linkList">
+                            <a href="https://www.checksix-forums.com/viewtopic.php?f=286&t=170180" target="blank">CheckSix</a>
+                            <a href="http://www.aircockpit.com/viewtopic.php?f=157&t=5803" target="blank">Aircockpit</a>
+                        </nav>
+                    </div>
                 </div>
                 <div class="pages">
                     <section class="pageCollection">
@@ -155,6 +166,11 @@
                     </footer>
                 </section>
             </footer>
+            <div id="pageBottom"></div>
+        </div>
+        <div id="upDown">
+            <a href="#pageTop" id="up"><img src="Images/up.png"/></a>
+            <a href="#pageBottom" id="dwon"><img src="Images/down.png"/></a>
         </div>
     </body>
 </html>

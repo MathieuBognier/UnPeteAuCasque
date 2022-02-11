@@ -8,6 +8,11 @@
     src: url("Fonts/Varela_Round/VarelaRound-Regular.ttf");
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     font-family: "Varela Round", Helvetica, sans-serif;
@@ -56,8 +61,8 @@ body
 
 .tabs
 {
+    position:relative;
     background-color: rgba(240, 248, 255, 0.233);
-    padding-top: 4px;
 }
 
 .tabs input
@@ -74,7 +79,7 @@ body
     padding-right: 30px;
     padding-bottom: 10px;
     padding-top: 10px;
-    line-height: 40px;
+    line-height: 45px;
     margin-right: -4px;
 }
 
@@ -106,15 +111,47 @@ body
 
 .links
 {
-    display:inline;
+    display:flex;
     float:right;
 }
 
-.linkIcon img
+.link
+{
+    display: inline;
+    height: 100%;
+    padding-top: 4px;
+}
+
+.linkIcon
 {
     padding-right:10px;
     padding-left:10px;
     margin-top: 2px;
+}
+
+.linkList
+{
+    position:absolute;
+    overflow: hidden;
+    height: 0px;
+    bottom:100%;
+    right:0px;
+    z-index: 1;
+    background-color: rgba(240, 248, 255, 0.233);
+    color: aliceblue;
+}
+
+.linkList a
+{
+    display: block;
+    color: aliceblue;
+    padding: 10px 20px 10px 25px;
+}
+
+#forumLink:hover nav
+{
+    height: 90px;
+    transition:all 0.5s;
 }
 
 footer
@@ -267,4 +304,13 @@ footer
 h2
 {
     margin-bottom: 0;
+}
+
+#upDown
+{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    right:30px;
+    bottom: 0;
 }
